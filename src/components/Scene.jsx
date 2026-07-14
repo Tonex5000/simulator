@@ -5,7 +5,10 @@ import Cable from './Cable'
 
 function Ground() {
   return (
-    <mesh></mesh>
+    <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} receiveShadow>
+      <planeGeometry args={[50, 50]} />
+      <meshStandardMaterial color="#1a365d" roughness={0.9} metalness={0.1} />
+    </mesh>
   )
 }
 
